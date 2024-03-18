@@ -5,9 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        System.out.println(shouldWakeUp(true,25));
-        System.out.println(hasTeen(10,25,40));
-        System.out.println(isCatPlaying(true,44));
+        System.out.println(shouldWakeUp(true,23));
+        System.out.println(hasTeen(15,25,40));
+        System.out.println(isCatPlaying(false,44));
 
         Scanner scanner = new Scanner(System.in);
         //Dikdörtgen alanı için..
@@ -42,7 +42,7 @@ public class Main {
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
-        if(isBarking && (20<=clock && clock<=23 || 0<=clock && clock<=8)){
+        if(isBarking && (20<=clock && clock<=23) ||( 0<=clock && clock<=8)){
             return true;
         }else{
             return false;
