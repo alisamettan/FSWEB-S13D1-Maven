@@ -42,11 +42,14 @@ public class Main {
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
-        if(isBarking && (20<=clock && clock<=23) ||( 0<=clock && clock<=8)){
+        /*if(isBarking && (20<clock && clock<=23) ||( 0<=clock && clock<8)){
             return true;
         }else{
             return false;
-        }
+        }*/
+
+        if(clock<0 || clock>23 || !isBarking) return false;
+         return clock<8 || clock >=20;///----->Bu da başka ve daha doğru bir yöntem.
     }
 
     public static boolean hasTeen(int firstAge, int secondAge, int thirdAge) {
@@ -78,6 +81,8 @@ public class Main {
                 return false;
             }
         }
+
+
     }
 
     public static double area(double width, double height) {
