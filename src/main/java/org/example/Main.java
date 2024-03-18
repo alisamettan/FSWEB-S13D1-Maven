@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
-        System.out.println(shouldWakeUp(true,15));
+        System.out.println(shouldWakeUp(true,25));
         System.out.println(hasTeen(10,25,40));
         System.out.println(isCatPlaying(true,44));
 
